@@ -1,0 +1,18 @@
+# The Fair Distribution?
+
+How can we make sure that each winner receives a fair portion as compared to others based on the available weekly prizes especially when the total value of the prize is not evenly divisible by the number of winners?
+
+In such a scenario, the fairness can only be achieved when the difference in price value between the winners is at minimum. Such that The difference in prize between winner A and B is small.
+
+Let's look at a total prize value of 1000 that is to be shared fairly across 6 winners. For a fair distribution, each winner will receive a total of 150. Distribute the remaining prize value(100) by giving each winner an additional priza until the remainig prize value is exausted or all winners have received the same number of prizes.
+
+# How?
+
+* First we will read the prizes and winners from the input.
+* Next we will calculate the total value of the prizes and the prize value per winner.
+* Next we will use these values (prize value per winner) to create a map that will link each winner with a list of prizes they have won.
+* We then iterate through the prizes and assign them to the winners.
+* Any remaining prizes will be assigned to the winners in a way that will maximize the prizes.
+* We finally print the prize distribution
+
+<h1>Thank You!</h1>
