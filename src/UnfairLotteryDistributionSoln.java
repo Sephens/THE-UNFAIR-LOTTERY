@@ -1,5 +1,7 @@
+// from util library import all
 import java.util.*;
 
+// main class
 public class UnfairLotteryDistributionSoln {
 
     public static void main(String[] args) {
@@ -48,11 +50,11 @@ public class UnfairLotteryDistributionSoln {
 
         // Print the prize distribution
         for (String winner : winners) {
-            List<Integer> winnerPrizes = winnerToPrizesMap.get(winner);
+            List<Integer> prizesOfWinner = winnerToPrizesMap.get(winner);
             System.out.print(winner + ":");
-            for (int i = 0; i < winnerPrizes.size(); i++) {
-                System.out.print(winnerPrizes.get(i));
-                if (i < winnerPrizes.size() - 1) {
+            for (int i = 0; i < prizesOfWinner.size(); i++) {
+                System.out.print(prizesOfWinner.get(i));
+                if (i < prizesOfWinner.size() - 1) {
                     System.out.print(",");
                 }
             }
